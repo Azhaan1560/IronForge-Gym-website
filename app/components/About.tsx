@@ -47,6 +47,7 @@ export default function About() {
                         <Image
                             src="/images/about.jpg"
                             alt="Close up of heavily knurled barbell resting on a dark steel rack."
+                            loading="eager"
                             width={600}
                             height={600}
                             className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"

@@ -71,7 +71,7 @@ export default function Header() {
         {/* Contact Button */}
         <div className="justify-self-end mr-6">
           <Link
-            href="#contact"
+            href="/contact"
             className="bg-electric-blue text-obsidian-black font-label-bold text-label-bold px-6 py-3 rounded uppercase hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] transition-all duration-300"
           >
             Contact Us
