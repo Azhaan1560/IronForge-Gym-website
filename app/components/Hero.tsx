@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -7,7 +8,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero2.jfif"
+          src="/images/hero2.png"
           alt="Industrial Gym"
           fill
           priority
@@ -35,19 +36,19 @@ export default function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-6">
-          <a
-            href="#plans"
+          <Link
+            href="/membership"
             className="bg-electric-blue text-obsidian-black font-label-bold text-label-bold px-8 py-4 rounded uppercase tracking-widest hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] transition-all duration-300 hover:-translate-y-1"
           >
             JOIN THE FORGE
-          </a>
+          </Link>
 
-          <a
-            href="#contact"
+          <Link
+            href="/contact"
             className="border-2 border-electric-blue text-electric-blue font-label-bold text-label-bold px-8 py-4 rounded uppercase tracking-widest hover:bg-electric-blue/10 transition-all duration-300 hover:-translate-y-1"
           >
             BOOK FREE TRIAL
-          </a>
+          </Link>
         </div>
       </div>
 

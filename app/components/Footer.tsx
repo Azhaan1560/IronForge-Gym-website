@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 export default function Footer() {
     return (
         <footer className="w-full pt-section-gap-sm pb-8 bg-obsidian-black border-t border-border-dark">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto mb-12">
             <div className="col-span-1 md:col-span-1">
                 <a className="font-headline-md text-headline-md text-on-surface uppercase flex items-center gap-2 mb-4" href="#">
-                    <Image src="https://lh3.googleusercontent.com/aida/AP1WRLverVzseFxUgj5Ie9SsZSUbNpn0aUEtUBeavN4BnUdrzh913zejMLNIXwZeH6eaJ9093e5U6c0iQAPtoylM5GzXRwy46q2HKcKAmpPnRbQmUYkjLjximeTV7232luS3_dsaXZv3tB2vSQEI8gUydxFvu10KhCs4IZ1Ezw6u6LIzie7NU8mg6KGJJRMq2b2h8gTSk3SJZQTnKXJ7Oed4DPSeCavYXvEanZQJslWOoQKwQnBk9EsQfV_rX-PS"
+                    <Image src="/images/icon.jpg"
                     alt="Iron Forge Anvil Icon"
                     width={32}
                     height={32}
@@ -21,16 +22,16 @@ export default function Footer() {
             <div className="col-span-1">
                 <h4 className="font-label-bold text-label-bold text-on-surface uppercase mb-4 tracking-widest">Navigation</h4>
                 <ul className="space-y-2 font-body-md text-body-md">
-                    <li className=""><a className="text-metadata-grey hover:text-electric-blue transition-colors" href="#about">About Us</a></li>
-                    <li className=""><a className="text-metadata-grey hover:text-electric-blue transition-colors" href="#services">Programs</a></li>
-                    <li className=""><a className="text-metadata-grey hover:text-electric-blue transition-colors" href="#trainers">Coaches</a></li>
-                    <li className=""><a className="text-metadata-grey hover:text-electric-blue transition-colors" href="#plans">Membership</a></li>
+                    <li className=""><Link className="text-metadata-grey hover:text-electric-blue transition-colors" href="/#about">About Us</Link></li>
+                    <li className=""><Link className="text-metadata-grey hover:text-electric-blue transition-colors" href="/programs">Programs</Link></li>
+                    <li className=""><Link className="text-metadata-grey hover:text-electric-blue transition-colors" href="/trainers">Coaches</Link></li>
+                    <li className=""><Link className="text-metadata-grey hover:text-electric-blue transition-colors" href="/membership">Membership</Link></li>
                 </ul>
             </div>
             <div className="col-span-1">
                 <h4 className="font-label-bold text-label-bold text-on-surface uppercase mb-4 tracking-widest">Legal</h4>
                 <ul className="space-y-2 font-body-md text-body-md">
-                    <li className=""><a className="text-metadata-grey hover:text-electric-blue transition-colors" href="#">Privacy Policy</a></li>
+                    <li className=""><Link className="text-metadata-grey hover:text-electric-blue transition-colors" href="/programs">Privacy Policy</Link></li>
                     <li className=""><a className="text-metadata-grey hover:text-electric-blue transition-colors" href="#">Terms of Service</a></li>
                     <li className=""><a className="text-metadata-grey hover:text-electric-blue transition-colors" href="#">FAQ</a></li>
                     <li className=""><a className="text-metadata-grey hover:text-electric-blue transition-colors" href="#">Careers</a></li>

@@ -45,7 +45,7 @@ export default function About() {
                     <div className="relative h-[600px] hidden lg:block rounded-xl overflow-hidden border border-border-dark">
                         <div className="absolute inset-0 bg-electric-blue/10 mix-blend-overlay z-10"></div>
                         <Image
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyqWJwY-F2iJYDBsAB83k1s72q0XTwxJXP8Ppa3LXHK2xFmtqO3ANFXC3tKFD2rZ6vPGP97TPgC4jGs_j13LTsoWj8HIFW13QkwmQjI9OO2bjZ1d8N7sPF5sDB24ADCa-PBdaT_Ye6K_BKCynt3ap_HXfUpKXtJJ73d3w2CtyynzVUO90wzuMgd0ffmR-nJCjivbVugnh7K4uXl2ngpJEaNzornsrqn-vHH8qo2tiwlLlHjQE8Wd9iag"
+                            src="/images/about.jpg"
                             alt="Close up of heavily knurled barbell resting on a dark steel rack."
                             width={600}
                             height={600}
