@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <header className="relative h-[700px] overflow-hidden">
+    <header className="relative h-[600px] overflow-hidden">
 
       {/* Background Image */}
       <div className="absolute inset-0">

@@ -1,7 +1,7 @@
 import TrainersHero from "./components/TrainersHero"
 import Link from "next/link";
 import Image from "next/image";
-export default function programs() {
+export default function trainers() {
     return (
         <main className="flex-grow pt-[64px]">
             <TrainersHero />
