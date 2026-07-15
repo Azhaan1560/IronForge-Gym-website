@@ -14,7 +14,7 @@ export default function MembershipHero() {
                               className="object-cover object-center"
                     />
             </div>
-            <div className="relative z-20 text-center px-margin-mobile md:px-margin-desktop max-w-[800px] mx-auto">
+            <div className="relative z-20 text-center px-margin-mobile md:px-margin-desktop max-w-[800px] mx-auto pt-16 md:pt-0">
                 <h1 className="font-display-lg text-headline-lg-mobile md:text-display-lg text-on-surface uppercase mb-6 drop-shadow-lg">Select
                                 Your Path<br /><span className="text-electric-blue">To Strength</span></h1>
                 <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12">Commit to

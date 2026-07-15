@@ -33,9 +33,10 @@ Add definitions for: `glow-hover`, `electric-glow-hover`, `electric-glow`, `inpu
 
 ### Phase 2: Mobile Hamburger Menu (Header.tsx)
 - Convert to `"use client"` component
-- Add hamburger button visible below `md` breakpoint
-- Slide-down panel with nav links + Contact button stacked vertically
-- Desktop layout unchanged
+- Add hamburger button visible below `md` breakpoint (right-aligned via 3-column grid)
+- Right-side drawer with nav links + Contact button (slides in via `translate-x`), dark overlay behind it
+- "IRON FORGE" text has `whitespace-nowrap` to stay on one line
+- Desktop layout unchanged (nav centered)
 
 ### Phase 3: Responsive Typography (6 hero files + membership/page.tsx)
 - All hero `<h1>`s: `text-headline-lg-mobile md:text-display-lg`
@@ -56,21 +57,28 @@ Add definitions for: `glow-hover`, `electric-glow-hover`, `electric-glow`, `inpu
 - `ProgramHero` → `TrainersHero` (TrainersHero.tsx:2)
 - `trainers` → `Trainers` (trainers/page.tsx:4)
 - `ClassNamees` → `Classes` (membership/page.tsx:63)
+- Removed unused `ChangeEvent` import (contact/page.tsx)
 
-## Files to Modify
-1. `AGENTS.md` — add this plan
-2. `app/globals.css` — add missing utility classes
-3. `app/components/Header.tsx` — mobile hamburger menu
-4. `app/components/Hero.tsx` — responsive height + typography
+### Phase 7: Post-Review Mobile Refinements
+- Landing page hero CTAs: `flex-col sm:flex-row` → `flex-row flex-wrap` so buttons stay side by side on mobile
+- Membership hero text: added `pt-16 md:pt-0` to keep content below fixed header
+- Header nav drawer: changed from slide-down panel to right-side drawer with overlay
+- Header logo text: added `whitespace-nowrap` to prevent "IRON FORGE" wrapping
+
+## Files Modified
+1. `AGENTS.md` — added responsive plan
+2. `app/globals.css` — added missing utility classes
+3. `app/components/Header.tsx` — mobile hamburger menu (right-side drawer)
+4. `app/components/Hero.tsx` — responsive height + typography + side-by-side CTAs
 5. `app/components/About.tsx` — mobile image + responsive height + grid gap
 6. `app/trainers/components/TrainersHero.tsx` — responsive height + typography + rename
 7. `app/gallery/components/GalleryHero.tsx` — responsive height
-8. `app/membership/components/MembershipHero.tsx` — responsive height + typography
+8. `app/membership/components/MembershipHero.tsx` — responsive height + typography + top padding
 9. `app/contact/components/ContactHero.tsx` — responsive height + typography fix
 10. `app/programs/components/ProgramHero.tsx` — responsive height
 11. `app/membership/page.tsx` — responsive price/heading typography + typo fix
 12. `app/programs/page.tsx` — fix `/memberships` link
-13. `app/trainers/page.tsx` — rename function to `Trainers`
+13. `app/contact/page.tsx` — removed unused `ChangeEvent` import
 
 ## Commands
 - `npm run dev` — start dev server

@@ -35,7 +35,7 @@ export default function Hero() {
           FORGED IN STRENGTH. BUILT FOR PRECISION.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-6">
+        <div className="flex flex-row flex-wrap justify-center gap-4">
           <Link
             href="/membership"
             className="bg-electric-blue text-obsidian-black font-label-bold text-label-bold px-8 py-4 rounded uppercase tracking-widest hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] transition-all duration-300 hover:-translate-y-1"

@@ -32,7 +32,7 @@ export default function Header() {
               height={32}
               className="h-8 w-auto"
             />
-            <span className="text-electric-blue font-bold uppercase tracking-tight">
+            <span className="text-electric-blue font-bold uppercase tracking-tight whitespace-nowrap">
               IRON FORGE
             </span>
           </a>
@@ -81,15 +81,23 @@ export default function Header() {
 
       </div>
 
-      {/* Mobile Slide-Down Panel */}
+      {/* Overlay */}
+      {menuOpen && (
+        <div
+          className="md:hidden fixed inset-0 z-40 bg-black/50 transition-opacity duration-300"
+          onClick={() => setMenuOpen(false)}
+        />
+      )}
+
+      {/* Mobile Right-Side Drawer */}
       <div
-        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${menuOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"}`}
+        className={`md:hidden fixed top-0 right-0 h-full w-[280px] z-50 bg-background/95 backdrop-blur-md border-l border-border-dark transition-transform duration-300 ease-in-out ${menuOpen ? "translate-x-0" : "translate-x-full"}`}
       >
-        <div className="flex flex-col items-center gap-4 px-4 pb-6 pt-2 bg-background/95 backdrop-blur-md border-t border-border-dark">
+        <div className="flex flex-col items-center gap-6 px-6 pt-24">
           {navLinks.map((link) => (
             <Link
               key={link.href}
-              className="text-on-surface-variant font-label-bold text-label-bold uppercase tracking-widest hover:text-electric-blue transition-colors duration-200 py-1"
+              className="text-on-surface-variant font-label-bold text-label-bold uppercase tracking-widest hover:text-electric-blue transition-colors duration-200 py-2 text-lg"
               href={link.href}
               onClick={() => setMenuOpen(false)}
             >
@@ -98,7 +106,7 @@ export default function Header() {
           ))}
           <Link
             href="/contact"
-            className="bg-electric-blue text-obsidian-black font-label-bold text-label-bold px-6 py-3 rounded uppercase hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] transition-all duration-300 mt-2 w-full text-center"
+            className="bg-electric-blue text-obsidian-black font-label-bold text-label-bold px-8 py-3 rounded uppercase hover:shadow-[0_0_15px_rgba(59,130,246,0.4)] transition-all duration-300 mt-4 w-full text-center"
             onClick={() => setMenuOpen(false)}
           >
             Contact Us
