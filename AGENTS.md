@@ -65,6 +65,14 @@ Add definitions for: `glow-hover`, `electric-glow-hover`, `electric-glow`, `inpu
 - Header nav drawer: changed from slide-down panel to right-side drawer with overlay
 - Header logo text: added `whitespace-nowrap` to prevent "IRON FORGE" wrapping
 
+### Phase 8: Final Header & Hero Polish
+- Header: `backdrop-blur` isolated to an inner `<div>` so the `<nav>` doesn't become a containing block for its `fixed` overlay/drawer children
+- Header mobile layout: uses `flex` (not grid) so hamburger sits at far right edge
+- Drawer background: solid `bg-obsidian-black` instead of semi-transparent `bg-background/95` (avoids backdrop-blur issues)
+- Hero: `h-[400px]` → `min-h-[500px]` so content never overflows on small screens
+- Hero typography: layered breakpoints `text-3xl sm:text-headline-lg-mobile md:text-display-lg` for smooth scaling
+- Hero CTAs: `flex-nowrap` + `whitespace-nowrap` with responsive padding/font (`text-xs sm:text-base`, `px-4 sm:px-8`, `py-3 sm:py-4`)
+
 ## Files Modified
 1. `AGENTS.md` — added responsive plan
 2. `app/globals.css` — added missing utility classes

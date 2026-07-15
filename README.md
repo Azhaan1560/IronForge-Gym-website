@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Iron Forge Gym
+
+A dark industrial-themed gym demo website built with **Next.js 16** (App Router), **React 19**, **Tailwind CSS v4**, and **TypeScript 5**.
+
+## Tech Stack
+
+- **Next.js 16.2.10** — App Router, Turbopack, Static Generation
+- **React 19.2.4** — Server & Client Components
+- **Tailwind CSS v4** — `@theme` design tokens, custom utilities
+- **TypeScript 5** — Strict mode
+- **Material Symbols Outlined** — Google Fonts icon set
+
+## Pages
+
+| Route | Content |
+|-------|---------|
+| `/` | Home — Hero with CTAs, About section |
+| `/programs` | 5 training programs (Strength, HIIT, Yoga, Cross, Combat) |
+| `/trainers` | Trainer profiles (Marcus Thorne, Sarah Malik) |
+| `/membership` | 3 pricing tiers (Basic $49, Standard $79, Premium $129) + FAQ |
+| `/gallery` | Bento-grid image gallery with "Load More" toggle |
+| `/contact` | Contact form + facility info panel + map placeholder |
+
+## Design System
+
+- **Theme**: Dark industrial — obsidian black (`#121317`), electric blue accent (`#3B82F6`)
+- **Fonts**: Archivo Narrow (headlines/display), Inter (body/labels)
+- Custom Tailwind tokens for colors, typography scale, spacing, and border radius
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Commands
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Production build |
+| `npm run lint` | Run ESLint |
