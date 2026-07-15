@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function ProgramHero() {
     return (
-        <header className="relative h-[500px] flex items-center justify-center border-b border-border-dark mb-section-gap-sm md:mb-section-gap-lg">
+        <header className="relative h-[350px] sm:h-[420px] md:h-[500px] flex items-center justify-center border-b border-border-dark mb-section-gap-sm md:mb-section-gap-lg">
             <div className="absolute inset-0 ">
                     <div
                         className="absolute inset-0 bg-gradient-to-b from-obsidian-black/80 via-obsidian-black/60 to-background z-10">

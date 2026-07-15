@@ -13,7 +13,7 @@ export default function membership() {
                                                 Basic</h3>
                                         <div className="flex items-baseline gap-1 mb-6">
                                                 <span
-                                                        className="font-headline-lg text-headline-lg text-electric-blue">$49</span>
+                                                        className="font-headline-lg text-headline-md md:text-headline-lg text-electric-blue">$49</span>
                                                 <span className="font-body-md text-metadata-grey">/mo</span>
                                         </div>
                                         <ul className="flex-grow space-y-4 mb-8">
@@ -47,7 +47,7 @@ export default function membership() {
                                                 Standard</h3>
                                         <div className="flex items-baseline gap-1 mb-6">
                                                 <span
-                                                        className="font-headline-lg text-headline-lg text-electric-blue">$79</span>
+                                                        className="font-headline-lg text-headline-md md:text-headline-lg text-electric-blue">$79</span>
                                                 <span className="font-body-md text-metadata-grey">/mo</span>
                                         </div>
                                         <ul className="flex-grow space-y-4 mb-8">
@@ -60,7 +60,7 @@ export default function membership() {
                                                 <li className="flex items-start gap-3">
                                                         <span
                                                                 className="material-symbols-outlined text-electric-blue text-sm mt-1">check</span>
-                                                        <span className="text-on-surface-variant">All Group ClassNamees
+                                                        <span className="text-on-surface-variant">All Group Classes
                                                                 Included</span>
                                                 </li>
                                                 <li className="flex items-start gap-3">
@@ -86,7 +86,7 @@ export default function membership() {
                                                 Premium</h3>
                                         <div className="flex items-baseline gap-1 mb-6">
                                                 <span
-                                                        className="font-headline-lg text-headline-lg text-electric-blue">$129</span>
+                                                        className="font-headline-lg text-headline-md md:text-headline-lg text-electric-blue">$129</span>
                                                 <span className="font-body-md text-metadata-grey">/mo</span>
                                         </div>
                                         <ul className="flex-grow space-y-4 mb-8">
@@ -125,7 +125,7 @@ export default function membership() {
                         className="bg-obsidian-black py-section-gap-sm px-margin-mobile md:px-margin-desktop border-t border-border-dark">
                         <div className="max-w-container-max mx-auto">
                                 <div className="text-center mb-12">
-                                        <h2 className="font-headline-lg text-headline-lg text-on-surface uppercase">
+                                        <h2 className="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface uppercase">
                                                 Frequently Asked Questions</h2>
                                 </div>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">

@@ -3,7 +3,7 @@ export default function About() {
     return (
         <section className="py-section-gap-sm md:py-section-gap-lg px-margin-mobile md:px-margin-desktop relative" id="about">
             <div  className="max-w-container-max mx-auto">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
                     <div>
                                 <h2
                             className="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface uppercase mb-8 border-l-4 border-electric-blue pl-6">
@@ -42,7 +42,7 @@ export default function About() {
                             </div>
                         </div>
                     </div>
-                    <div className="relative h-[600px] hidden lg:block rounded-xl overflow-hidden border border-border-dark">
+                    <div className="relative h-[300px] md:h-[450px] lg:h-[600px] rounded-xl overflow-hidden border border-border-dark">
                         <div className="absolute inset-0 bg-electric-blue/10 mix-blend-overlay z-10"></div>
                         <Image
                             src="/images/about.jpg"

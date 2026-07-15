@@ -146,7 +146,7 @@ export default function programs() {
                                 className="font-headline-lg-mobile md:text-headline-lg text-on-surface uppercase mb-6 max-w-2xl mx-auto">
                                 READY TO START YOUR TRANSFORMATION?
                         </h2>
-                        <Link href="/memberships">
+                        <Link href="/membership">
                             <button
                                 className="bg-electric-blue text-obsidian-black font-headline-md text-headline-md px-10 py-4 rounded uppercase tracking-wider hover:shadow-[0_0_25px_rgba(59,130,246,0.5)] transition-all duration-300 transform hover:scale-105">
                                 JOIN THE FORGE

@@ -1,6 +1,6 @@
 "use client";
 import ContactHero from "./components/ContactHero";
-import { useState, type SyntheticEvent, type ChangeEvent } from "react";
+import { useState, type SyntheticEvent } from "react";
 
 type FormState = {
   name: string;
