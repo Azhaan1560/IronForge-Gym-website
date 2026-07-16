@@ -8,7 +8,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero2.png"
+          src="/images/landingpage_bg.png"
           alt="Industrial Gym"
           fill
           priority
